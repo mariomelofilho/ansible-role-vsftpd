@@ -40,6 +40,10 @@ vsftpd_xferlog_enable: true
 # Make sure PORT transfer connections originate from port 20 (ftp-data).
 vsftpd_connect_from_port_20: true
 
+# Passive mode port ranges. 0 means anyport
+vsftpd_pasv_min_port: 0
+vsftpd_pasv_min_port: 0
+
 # If you want, you can arrange for uploaded anonymous files to be owned by
 # a different user. Note! Using "root" for uploaded files is not
 # recommended!

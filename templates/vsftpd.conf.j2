@@ -33,6 +33,8 @@ listen_ipv6={{ vsftpd_listen_ipv6 | ansible.builtin.ternary('YES', 'NO') }}
 pam_service_name={{ vsftpd_pam_service_name }}
 userlist_enable={{ vsftpd_userlist_enable | ansible.builtin.ternary('YES', 'NO') }}
 use_localtime={{ vsftpd_use_localtime | ansible.builtin.ternary('YES', 'NO') }}
+pasv_min_port={{ vsftpd_pasv_min_port }}
+pasv_max_port={{ vsftpd_pasv_max_port }}
 {% if vsftpd_secure_chroot_dir %}
 secure_chroot_dir={{ vsftpd_secure_chroot_dir }}
 {% endif %}
