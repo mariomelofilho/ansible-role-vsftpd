@@ -29,7 +29,7 @@
 
 - name: Assert banner_email_file exists
   ansible.builtin.file:
-    path: {{ vsftpd_banned_email_file }}
+    path: "{{ vsftpd_banned_email_file }}"
     state: directory
     owner: root
     group: root

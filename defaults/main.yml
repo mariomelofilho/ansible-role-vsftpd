@@ -7,6 +7,9 @@ vsftpd_anonymous_enable: true
 # Folder for anonymous logins
 vsftpd_anonymous_root_dir: "/var/lib/ftpsecure"
 
+vsftpd_no_anon_password: true
+vsftpd_hide_ids: true
+
 # Enable this to allow local users to log in.
 vsftpd_local_enable: true
 

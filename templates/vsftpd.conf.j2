@@ -1,6 +1,8 @@
 {{ ansible_managed | comment }}
 anonymous_enable={{ vsftpd_anonymous_enable | ansible.builtin.ternary('YES', 'NO') }}
 anon_root={{ vsftpd_anonymous_root_dir }}
+no_anon_password={{ vsftpd_no_anon_password | ansible.builtin.ternary('YES', 'NO') }}
+hide_ids={{ vsftpd_hide_ids | ansible.builtin.ternary('YES', 'NO') }}
 local_enable={{ vsftpd_local_enable | ansible.builtin.ternary('YES', 'NO') }}
 write_enable={{ vsftpd_write_enable | ansible.builtin.ternary('YES', 'NO') }}
 local_umask={{ vsftpd_local_umask }}
